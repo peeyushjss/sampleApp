@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css"  href="../css/bootstrap.css">
+        <link rel="stylesheet" type="text/css"  href="../css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card card-container">
+                <p style="padding: 20px;" id="profile-name" class="profile-name-card">Login</p>
+                <form class="form-signin" method="post" action="/login">
+                    <span id="reauth-email" class="reauth-email"></span>
+                    <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email" required autofocus>
+                    <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+                    <div id="remember" class="checkbox">
+                        <label>
+                        </label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+                </form>
+                <hr style="background: #23527c!important; height: 1px;">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6" style="float: left;">
+                        <a href="reset">Reset Password?</a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6" style="float: right;">
+                        Not Registered?<a href="register">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

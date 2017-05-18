@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" type="text/css"  href="../css/bootstrap.css">
+        <link rel="stylesheet" type="text/css"  href="../css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card card-container">
+                <p style="padding: 20px;" id="profile-name" class="profile-name-card">Register</p>
+                <form class="form-signin" method="post" action="/register">
+                    <input type="text" id="inputName" name="name" class="form-control" placeholder="Name" required autofocus>
+                    <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email" required>
+                    <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+                    <input type="password" id="inputCPassword" name="cpassword" class="form-control" placeholder="Confirm Password" required>
+                    <div id="remember" class="checkbox">
+                        <label>
+                        </label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
